@@ -56,6 +56,12 @@ class TableBody extends HTMLElement {
     dialogShow(this.state[this.select]);
   }
 
+  disconnectedCallback() {
+    // TODO: addEventListener를 해제하는 코드를 넣어야 한다.
+    console.log('disconnectedCallback');
+  }
+
+
   static get observedAttributes() {
     return ['select'];
   }
