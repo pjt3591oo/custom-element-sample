@@ -5,17 +5,19 @@
   </head>
 
   <body>
-    <table id="result">
-      <thead>
-        <tr>
-          <th></th>
-          <th>firstName</th>
-          <th>lastName</th>
-          <th>address</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+    <check-table select=-1 id="result">
+      <table>
+        <thead>
+          <tr>
+            <th><input type="radio"></th>
+            <th>firstName</th>
+            <th>lastName</th>
+            <th>address</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </check-table>
 
     <template id="table-view-row">
       <tr>
@@ -25,6 +27,10 @@
         <td></td>
       </tr>
     </template>
+
+    <dialog id="dialog" >
+      <p>여러분 안녕하세요!</p>
+    </dialog>
     <script src="index.js"></script>
   </body>
 </html>
