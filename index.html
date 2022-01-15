@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-
-  </head>
-
+  <head></head>
   <body>
-    <check-table select=-1 id="result">
-      <table>
-        <thead>
-          <tr>
-            <th><input type="radio"></th>
-            <th>firstName</th>
-            <th>lastName</th>
-            <th>address</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </check-table>
+    <div>
+      <h2>타이머</h2>
+      <current-time> </current-time>
+    </div>
+  
+    <div>
+      <h2>카운터</h2>
+      <my-counter> </my-counter>
+    </div>
 
-    <template id="table-view-row">
-      <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </template>
+    <div>
+      <h2>custom element + template</h2>
+      <check-table select=-1 id="result">
+        <table>
+          <thead>
+            <tr>
+              <th><input type="radio"></th>
+              <th>firstName</th>
+              <th>lastName</th>
+              <th>address</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </check-table>
+  
+      <template id="table-view-row">
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </template>
+  
+      <dialog id="dialog" >
+        <p>여러분 안녕하세요!</p>
+      </dialog>
+    </div>
+    <script src="checkTable.js"></script>
 
-    <dialog id="dialog" >
-      <p>여러분 안녕하세요!</p>
-    </dialog>
-    <script src="index.js"></script>
+    <script src="counter.js"></script>
+    <script src="timer.js"></script>
   </body>
 </html>
